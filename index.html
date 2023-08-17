@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock & EDM Festival</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <h1>Lima Mayor</h1>
+            <nav class="navegacion-principal">
+                <a href="#lineup">Line Up</a>
+                <a href="#galeria">Galeria</a>
+                <a href="#boleto">Boletos</a>
+            </nav>
+        </div>
+
+    </header>
+    <div class="video">
+        <div class="overlay">
+            <div class="contenedor contenido-video">
+                <h2>Lima Mayor</h2>
+                <p>Marzo 2023,Lima-Peru</p>
+            </div>
+        </div>
+        <video autoplay muted loop>
+            <source src="video/concierto.mp4" type="video/mp4">
+            <source src="video/concierto.ogg" type="video/ogg">
+            <source src="video/concierto.webm" type="video/webm">
+        </video>
+    </div>
+    <section class="contenedor sobre-festival">
+        <div class="imagen">
+            <picture>
+                <source srcset="build/img/imagen_vocalista.avif" type="image/avif">
+                <source srcset="build/img/imagen_vocalista.webp" type="image/webp">
+                <img loading="lazy" width="200" height="300" src="build/img/imagen_vocalista.jpg" alt="imagen vocalista">
+            </picture>
+        </div>
+        <div class="contenido-festival">
+            <h2>Lima Mayor</h2>
+            <p class="fecha">Marzo 2023,Lima-Peru</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique harum magnam ipsum ex blanditiis porro quia, cumque dolorem, excepturi pariatur, obcaecati at culpa consequatur fugit incidunt non quasi facilis ducimus.</p>
+        </div>
+    </section>
+    <section  class="lineup">
+        <h3>Matches</h3>
+        <p class="dia">Jueves 23</p>
+        <div class="escenarios-contenedor contenedor">
+            <div class="escenario rock bg-amarillo">    
+                <p class="nombre-escenario">Grupo A</p>
+                <ul class="calendario">
+                    <li>08:00 | <span>Beastcoast vs Team Spirit</span></li>
+                    <li>08:00 | <span>Team Liquid vs Fanatic</span></li>
+                    <li>10:00 | <span>PSG.LGD vs Team Liquid</span></li>
+                    <li>12:00 | <span>Fanatic vs Beastcoast</span></li>
+                    <li>12:00 | <span>Team Spirit vs PSG.LGD</span></li>
+                </ul>
+            </div><!-- Aqui acaba el div del escenario -->
+            <div class="escenario edm bg-verde">    
+                <p class="nombre-escenario">Grupo B</p>
+                <ul class="calendario">
+                    <li>08:00 | <span>Thunder Awaken vs Team Secret</span></li>
+                    <li>08:00 | <span>Virtus Pro vs Evil Geniuses</span></li>
+                    <li>10:00 | <span>Thunder Awaken vs Team Aster</span></li>
+                    <li>12:00 | <span>Evil Geniuses vs Team Secret</span></li>
+                    <li>12:00 | <span>Team Aster vs Virtus Pro</span></li>
+                </ul>
+            </div><!-- Aqui acaba el div del escenario -->
+        </div> <!-- Aqui acaba el div de los escenarios -->
+        <p class="dia">Viernes 24</p>
+        <div class="escenarios-contenedor contenedor">
+            <div class="escenario rock bg-verde">    
+                <p class="nombre-escenario">Grupo A</p>
+                <ul class="calendario">
+                    <li>08:00 | <span>PSG.LGD vs Team Spirit</span></li>
+                    <li>08:00 | <span>Team Liquid vs Fanatic</span></li>
+                    <li>10:00 | <span>Fanatic vs Team Spirit  </span></li>
+                    <li>12:00 | <span>Beastcoast vs PSG.LGD</span></li>
+                    <li>12:00 | <span>Team Spirit vs Team Liquid</span></li>
+                </ul>
+            </div><!-- Aqui acaba el div del escenario -->
+            <div class="escenario edm bg-amarillo">    
+                <p class="nombre-escenario">Grupo B</p>
+                <ul class="calendario">
+                    <li>08:00 | <span>Thunder Awaken vs Team Secret</span></li>
+                    <li>08:00 | <span>Virtus Pro vs Evil Geniuses</span></li>
+                    <li>10:00 | <span>Thunder Awaken vs Team Aster</span></li>
+                    <li>12:00 | <span>Evil Geniuses vs Virtus Pro</span></li>
+                    <li>12:00 | <span>Team Aster vs Team Secret</span></li>
+                </ul>
+            </div><!-- Aqui acaba el div del escenario -->
+        </div> <!-- Aqui acaba el div de los escenarios -->
+    </section>
+    <section  class="galeria contenedor">
+        <h3>Galeria</h3>
+        <ul class="galeria-imagenes"></ul>
+    </section>
+    <section  class="boleto bg-verde">
+        <h3>Boletos</h3>   
+        <div class="contenedor contenedor-boletos">
+            <div class="pase basico">
+                <p class="nombre-pase">Pase 1 Dia</p>
+                <header class="pase-header">
+                    <p>Incluye</p>
+                </header>
+                
+                <div class="pase-body">
+                    <ul>
+                        <li>Acceso a ambos escenarios</li>
+                        <li>Comida y bebidas</li>
+                    </ul>
+                </div>
+                <footer class="pase-footer">
+                    <p>$100</p>
+                </footer>
+            </div>
+            <div class="pase premium">
+                <p class="nombre-pase">Pase 2 Dias</p>
+                <header class="pase-header">
+                    <p>Incluye</p>
+                </header>
+                <div class="pase-body">
+                    <ul>
+                        <li>Acceso a ambos escenarios</li>
+                        <li>Comida y bebidas</li>
+                        <li>Camisa del Evento</li>
+                        <li>Acceso VIP</li>
+                    </ul>
+                </div>
+                <footer class="pase-footer">
+                    <p>$180</p>
+                </footer>
+            </div>
+        </div>
+    </section>
+    <footer class="site-footer">
+        <p>Lima Mayor.Todos los Derechos Reservados.</p>
+    </footer>
+    <script src="build/js/app.js"></script>
+</body>
+</html>
